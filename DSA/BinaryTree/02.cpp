@@ -111,6 +111,17 @@ int height(BinaryTreeNode<int>* root){
     return maxHeight + 1;
 }
 
+// int height(BinaryTreeNode<int>* root) {
+//     if (root == NULL)
+//         return -1;   
+
+//     int leftHeight = height(root->left);
+//     int rightHeight = height(root->right);
+
+//     return max(leftHeight, rightHeight) + 1;
+// }
+
+
 void preorder(BinaryTreeNode<int>* root){
     if(root == NULL) return;
     cout<<root->data<<" ";
@@ -128,6 +139,15 @@ void inorder(BinaryTreeNode<int>* root){
     inorder(root->left);
     cout<<root->data<<" ";
     inorder(root->right);
+}
+
+int diameter(BinaryTreeNode<int>* root){
+    if(root == NULL) return;
+
+    int op1 = height(root->left) + height(root->right);
+    int op2 = diameter(root->left);
+    int op3 = diameter(root->right);
+    return max(op1 , max(op2 , op3));
 }
 int main() {
     std::ios_base::sync_with_stdio(false);
