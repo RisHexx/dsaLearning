@@ -19,7 +19,6 @@ class BinaryTreeNode{
         // resursively deleete the entrie tree
         delete left; // call the destructor of left subtree 
         delete right; // call the destructor of right subtree
-
     }
 
 };
