@@ -11,6 +11,7 @@ using namespace std;
 int main() {
     std::ios_base::sync_with_stdio(false);
     vector<int>arr = {3,5,7,9,2,6};
+    vector<int>::iterator it;
     vector<int>result;
     int key = 5;
     unordered_map<int , int> m;
