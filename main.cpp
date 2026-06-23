@@ -4,10 +4,12 @@ using namespace std;
 
 int main() {
     std::ios_base::sync_with_stdio(false);
-    stack<int>s1;
-    s1.push(10);
-    s1.push(10);
-    s1.push(10);
-    cout<<s1.top();
+    int size;
+    cin>>size;
+    vector<int> arr(size);
+    for(int i = 0 ; i < size ; i++){
+        cin>>arr[i];
+    }
+    
     return 0;
 }

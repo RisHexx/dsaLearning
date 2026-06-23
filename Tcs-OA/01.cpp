@@ -13,7 +13,7 @@ int main() {
     int k;
     cin>>k;
 
-    // optimal i did on leetcode;
+    // optimal i had done on leetcode;
     int count = 0;
     for(int i = 0 ; i < size ; i++){
         int sum = 0;

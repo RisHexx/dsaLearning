@@ -2,6 +2,10 @@
 using namespace std;
 #define ll long long
 
+/*
+"Most C++ STL implementations use Introsort, which begins with Quick Sort, switches to Heap Sort to avoid Quick Sort's worst case, and uses Insertion Sort for small ranges. This gives O(n log n) worst-case complexity."
+*/
+
 int partition (vector<int> &arr , int start , int end){
     int pivot = arr[start];
     int i = start + 1;
