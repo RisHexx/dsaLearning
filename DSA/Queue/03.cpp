@@ -9,6 +9,7 @@ int main() {
     q1.push(20);
     q1.push(30);
     q1.pop();
+
     cout<<q1.size()<<" ";
     cout<<q1.front();
     
