@@ -103,8 +103,10 @@ void printLevelWise(BinaryTreeNode<int>* root){
 }
 int main() {
     std::ios_base::sync_with_stdio(false);
-    BinaryTreeNode<int>* root = takeInputLevelWise();
-    printLevelWise(root);
+    // BinaryTreeNode<int>* root = takeInputLevelWise();
+    // printLevelWise(root);
+    BinaryTreeNode<int>* root = takeInput();
+    PrintTree(root);
 
     
     return 0;
